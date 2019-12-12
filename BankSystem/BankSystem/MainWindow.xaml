@@ -1,0 +1,28 @@
+﻿<Window x:Class="BankSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BankSystem"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Банковская система" FontSize="30" VerticalAlignment="Center"></Label>
+        <Label Content="Тел. номер в формате +77786226134" Grid.Row="1"></Label>
+        <Label Content="Пароль:" Grid.Row="3"></Label>
+        <TextBox x:Name="mobileNumberTB" VerticalAlignment="Center" Grid.Row="2" FontSize="30" Background="Bisque" ></TextBox>
+        <TextBox x:Name="passwordTB" VerticalAlignment="Center" Grid.Row="4" FontSize="30" Background="Bisque" ></TextBox>
+        <Button x:Name="singInBtn" Content="Войти" FontSize="30" Grid.Row="6" Click="SingInBtnClick"></Button>
+        <Button x:Name="showSignUpBtn" Content="Пройти регистрацию" FontSize="20" Grid.Row="7" Click="ShowSignUpBtnClick"></Button>
+    </Grid>
+</Window>
